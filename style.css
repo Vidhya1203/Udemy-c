@@ -1,10 +1,11 @@
 *{
     padding: 0;
-    padding: 0;
+    margin: 0;
 }
 body{
     font-family: 'Gabarito',sans-serif;
 }
+/*   Nav bar  */
 .navbar{
 
     padding: 10px;
@@ -14,6 +15,10 @@ body{
     gap:10px;
     align-items: center;
     flex-wrap: wrap;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .navbar-s1__title{
     color: #a01ca0;
@@ -22,28 +27,53 @@ body{
     padding: 10px;
     border:solid black 1px ;
     border-radius: 30px;
-    width:50%;
-    height:10%;
+    width:60%;
+    height:10px;
     display: flex;
     gap:10px;
     align-items: center;
 }
 .navbar-s2 input{
     border: none;
-   
+   background-color: transparent;
     font-size: 16px;
+    width:100%;
     
    
 }
-
+ 
 .navbar-s2 input:focus{
     outline: none;
 }
 .navbar-s3{
     display: flex;
-    gap:10px;
+    gap:15px;
     align-items: center;
 }
+/*my learning pop*/
+.mylearning{
+    position:relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position:absolute;
+    display: none;
+    border: 1px black solid;
+    background-color: white;
+    width:80px;
+    top:100%;
+    padding: 10px;
+
+    right:0;
+
+
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+    
+}
+
 .catagories{
  display: flex;
  flex-wrap: wrap;
@@ -71,6 +101,16 @@ body{
 .sale-image {
     position: relative;
 }
+.sale-image__offer{
+    border: 1px solid black;
+    width:35%;
+    position: absolute;
+    top:60px;
+    left:30px;
+    background-color: white;
+    padding:10px;
+}
+
 .recommended{
     padding: 10px;
 }

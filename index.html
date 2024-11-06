@@ -13,6 +13,7 @@
     />
     <!--my stylesheet-->
     <link rel="stylesheet" href="style.css" />
+    <!---font awesome CDN link-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -26,17 +27,21 @@
     <div class="navbar">
       <div class="navbar-s1"><h1 class="navbar-s1__title">Udemy</h1></div>
       <div class="navbar-s2">
-        <i class="fa-solid fa-magnifying-glass"
-          >  <input type="text" placeholder="Search for anything here..."
-        /></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for anything here..."/>
       </div>
       <div class="navbar-s3">
         <p>Courses</p>
-        <p>My Learning</p>
+        <div class="mylearning">
+          <p>My Learning</p>
+          <div class="mylearning__popup">
+            <p>you did'nt purchase anything !</p>
+          </div>
+        </div>
+          <i class="fa-solid fa-cart-shopping" style="color: #010813"></i>
+          <i class="fa-solid fa-bell" style="color: #010d23"></i>
+          <i class="fa-solid fa-user" style="color: #010813"></i>
         
-        <i class="fa-solid fa-cart-shopping" style="color: #010813"></i>
-        <i class="fa-solid fa-bell" style="color: #010d23"></i>
-        <i class="fa-solid fa-user" style="color: #010813"></i>
       </div>
     </div>
     <!--catagories-->
@@ -45,12 +50,19 @@
       <p>Business</p>
       <p>IT and Software</p>
       <p>Design</p>
-      <p>Personal Development </p>
+      <p>Personal Development</p>
       <p>Marketing</p>
     </div>
     <!--sale Image-->
     <div class="sale-image">
       <img src="./images/sale-img.jpg" alt="Sale image" />
+      <div class="sale-image__offer">
+        <h2>Udemy Flashsale! 24hours to save</h2>
+        <p>
+          Get Top courses for just 499.Just one day to save but a lifetime to
+          Learn
+        </p>
+      </div>
     </div>
     <!--Recommended-->
     <div class="recommended">
@@ -89,7 +101,7 @@
     </div>
     <!--Topics section-->
     <div class="topics">
-      <h1 class="topics__title">Topics Recommended  for you</h1>
+      <h1 class="topics__title">Topics Recommended for you</h1>
       <div class="topics__container">
         <p>website</p>
         <p>Javascrit</p>
@@ -147,7 +159,8 @@
             <p>Col steele</p>
             <p>4.9 ⭐⭐⭐⭐⭐</p>
             <p>$699 <del>$999</del></p>
-          </div> <div class="course-card">
+          </div>
+          <div class="course-card">
             <img src="./images/pgm1-img.avif" />
             <h3>Web Development bootcamp</h3>
             <p>Col steele</p>
@@ -165,31 +178,26 @@
       </div>
     </div>
     <div class="footer">
-        <div class="footer__one">
-            <div class="footer__one__s1">
-                <p>Udemy Business</p>
-                <p>Teach on Udemy</p>
-                <p>Get the App</p>
-                <p>About  Us</p>
-                <p>Contact Us</p>
-
-            </div>
-            <div class="footer__one__s2">
-                <p>Career</p>
-                <p>Blog</p>
-                <p>Support</p>
-                <p>Affiliate</p>
-                <p>Investors</p>
-
-            </div>
-
-
+      <div class="footer__one">
+        <div class="footer__one__s1">
+          <p>Udemy Business</p>
+          <p>Teach on Udemy</p>
+          <p>Get the App</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
         </div>
-        <div class="footer__two">
-            <h1>Udemy</h1>
-            <p>&copy;Udemy, Inc</p>
+        <div class="footer__one__s2">
+          <p>Career</p>
+          <p>Blog</p>
+          <p>Support</p>
+          <p>Affiliate</p>
+          <p>Investors</p>
         </div>
-
+      </div>
+      <div class="footer__two">
+        <h1>Udemy</h1>
+        <p>&copy;Udemy, Inc</p>
+      </div>
     </div>
   </body>
 </html>
