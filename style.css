@@ -8,7 +8,7 @@ body{
 /*   Nav bar  */
 .navbar{
 
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
@@ -32,6 +32,7 @@ body{
     display: flex;
     gap:10px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .navbar-s2 input{
     border: none;
@@ -88,12 +89,19 @@ body{
     padding: 10px;
     border-radius: 30px;
     margin: 5px;
+    cursor:pointer;
+    border: 1px solid purple;
     
 
 
 }
 .catagories p:hover{
     background-color: yellowgreen;
+    border: 1px solid purple;
+    color: black;
+
+    transition: 1s;
+   
 }
 .sale-image  img{
  width:100%;
@@ -109,6 +117,21 @@ body{
     left:30px;
     background-color: white;
     padding:10px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .recommended{
